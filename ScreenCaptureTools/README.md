@@ -2,29 +2,6 @@
 
 Windows-only C modules for desktop capture, image acquisition, comparison, and capture diagnostics. Every tool is an independently callable module; there are no `main()` functions and no console loops. The APIs are intended to be driven by a host application or a Raylib update loop.
 
-## Directory layout
-
-```text
-ScreenCaptureTools/
-├── common/
-│   ├── captureImage.c/.h
-│   └── captureWic.c/.h
-├── screenCapture.c/.h
-├── screenCapture/
-│   ├── fullDesktopCapture.c/.h
-│   ├── monitorCapture.c/.h
-│   ├── regionCapture.c/.h
-│   └── windowCapture.c/.h
-├── continuousScreenCapture.c/.h
-├── screenshotRecorder.c/.h
-├── captureFormatConverter.c/.h
-├── imageComparisonTool.c/.h
-├── screenChangeDetector.c/.h
-├── regionChangeDetector.c/.h
-├── screenCaptureProfiler.c/.h
-└── captureConfigurationInspector.c/.h
-```
-
 ## Tools and responsibilities
 
 - **Screen Capture**: Parent interface for full-desktop, individual-monitor, region, and application-window capture. Each sub-bullet has its own implementation and header in `screenCapture/`.
