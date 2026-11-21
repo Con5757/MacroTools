@@ -8,25 +8,18 @@ static void printDeviceFlags(DWORD flags) {
 
   if (flags & DISPLAY_DEVICE_ATTACHED_TO_DESKTOP)
     printf("  Attached to Desktop\n");
-
   if (flags & DISPLAY_DEVICE_PRIMARY_DEVICE)
     printf("  Primary Display\n");
-
   if (flags & DISPLAY_DEVICE_MIRRORING_DRIVER)
     printf("  Mirroring Driver\n");
-
   if (flags & DISPLAY_DEVICE_VGA_COMPATIBLE)
     printf("  VGA Compatible\n");
-
   if (flags & DISPLAY_DEVICE_REMOVABLE)
     printf("  Removable Device\n");
-
   if (flags & DISPLAY_DEVICE_MODESPRUNED)
     printf("  Display Modes Pruned\n");
-
   if (flags & DISPLAY_DEVICE_REMOTE)
     printf("  Remote Device\n");
-
   if (flags & DISPLAY_DEVICE_DISCONNECT)
     printf("  Disconnected\n");
 }
