@@ -1,0 +1,27 @@
+#pragma once
+
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+
+#include <Windows.h>
+
+typedef enum {
+  MOUSE_BUTTON_LEFT = 0,
+  MOUSE_BUTTON_RIGHT,
+  MOUSE_BUTTON_MIDDLE,
+  MOUSE_BUTTON_X1,
+  MOUSE_BUTTON_X2,
+  MOUSE_BUTTON_COUNT
+} MouseButton;
+
+enum {
+  MOUSE_BUTTON_MASK_LEFT = 1u << MOUSE_BUTTON_LEFT,
+  MOUSE_BUTTON_MASK_RIGHT = 1u << MOUSE_BUTTON_RIGHT,
+  MOUSE_BUTTON_MASK_MIDDLE = 1u << MOUSE_BUTTON_MIDDLE,
+  MOUSE_BUTTON_MASK_X1 = 1u << MOUSE_BUTTON_X1,
+  MOUSE_BUTTON_MASK_X2 = 1u << MOUSE_BUTTON_X2
+};
+
+DWORD mouseButtonMonitorGetState(void);
+BOOL mouseButtonMonitorIsDown(MouseButton button);
