@@ -1,3 +1,3 @@
 # MacroTools 
 
-tools to build macros for games and other tasks
+tools to build macros
