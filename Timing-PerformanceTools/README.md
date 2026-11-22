@@ -57,9 +57,9 @@ TTFrameRateMonitor fps;
 TTFrameRateResult fpsResult;
 ttFrameRateMonitorInitialize(&fps);
 
-/* Inside the application's update loop: */
+// Inside the application's update loop:
 if (ttFrameRateMonitorUpdate(&fps, &fpsResult) && fpsResult.frameCount > 0) {
-    /* Display fpsResult.instantaneousFps / fpsResult.averageFps in Raylib. */
+    // Display fpsResult.instantaneousFps / fpsResult.averageFps in Raylib
 }
 ```
 
