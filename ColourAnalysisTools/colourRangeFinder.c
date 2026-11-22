@@ -49,7 +49,7 @@ BOOL colourRangeFinderSearchRGB(int x, int y, int width, int height,
 }
 
 static BOOL hueInRange(double hue, double minimum, double maximum) {
-  /* A minimum greater than maximum means the range crosses 0 degrees. */
+  // if a min is greater than max -> range must cross 0
   if (minimum <= maximum)
     return hue >= minimum && hue <= maximum;
   return hue >= minimum || hue <= maximum;

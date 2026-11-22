@@ -62,7 +62,7 @@ BOOL pixelImageCapture(int x, int y, int width, int height, PixelImage *image) {
   ZeroMemory(&bitmapInfo, sizeof(bitmapInfo));
   bitmapInfo.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
   bitmapInfo.bmiHeader.biWidth = width;
-  bitmapInfo.bmiHeader.biHeight = -height; /* top-down DIB */
+  bitmapInfo.bmiHeader.biHeight = -height; // top-down DIBg
   bitmapInfo.bmiHeader.biPlanes = 1;
   bitmapInfo.bmiHeader.biBitCount = 32;
   bitmapInfo.bmiHeader.biCompression = BI_RGB;
