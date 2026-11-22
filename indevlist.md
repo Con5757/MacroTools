@@ -1,4 +1,4 @@
-## 1. Monitor & Display Management
+## 1. Monitor & Display Management (Completed)
 
 - **Monitor Inspector**: Detect connected monitors, resolutions, refresh rates, dimensions and identifiers.
   - Monitor Enumeration: List all connected displays.
@@ -13,7 +13,7 @@
 - **Refresh Rate Detector**: Identify monitor refresh rates.
 - **Display Information Dumper**: Export complete display configuration information.
 
-## 2. Mouse Tools
+## 2. Mouse Tools (Completed)
 
 - **Mouse Tracker**: Continuously print mouse coordinates at a configurable interval.
   - Position Tracking: Track X/Y coordinates.
@@ -34,7 +34,7 @@
 - **Mouse Boundary Detector**: Detect when the cursor enters or exits defined screen regions.
 - **Mouse Region Monitor**: Detect when the cursor enters or leaves specified coordinates.
 
-## 3. Keyboard Tools
+## 3. Keyboard Tools (Completed)
 
 - **Key State Monitor**: Detect currently held keyboard keys.
 - **Key Recorder**: Record key presses and releases with timestamps.
@@ -49,7 +49,7 @@
 - **Keyboard Input Simulator**: Generate controlled keyboard inputs.
 - **Keyboard State Snapshot**: Capture the current state of all keys.
 
-## 4. Screen Capture & Image Acquisition
+## 4. Screen Capture & Image Acquisition (Completed)
 
 - **Screen Capture**: Capture the entire desktop.
   - Full Desktop Capture: Capture all monitors.
@@ -65,7 +65,7 @@
 - **Screen Capture Profiler**: Measure capture performance and processing time.
 - **Capture Configuration Inspector**: Inspect capture dimensions, formats and settings.
 
-## 5. Pixel & Colour Analysis
+## 5. Pixel & Colour Analysis (Completed)
 
 - **Pixel Inspector**: Retrieve RGB, HEX and other colour representations of a coordinate.
 - **Pixel Tracker**: Continuously monitor a specific pixel's colour.
@@ -82,7 +82,7 @@
 - **Pixel History Recorder**: Record historical colour values over time.
 - **Colour Profile Tester**: Compare colour detection across display configurations.
 
-## 6. Region & Pattern Recognition
+## 6. Region & Pattern Recognition (Completed)
 
 - **Region Scanner**: Scan rectangular areas for specified conditions.
 - **Region Inspector**: Inspect the contents and dimensions of a screen region.
@@ -101,7 +101,7 @@
 - **Multi-Target Detector**: Search for multiple visual targets simultaneously.
 - **Region Occupancy Detector**: Determine whether a region contains visual activity.
 
-## 7. Window & Application Management
+## 7. Window & Application Management (Completed)
 
 - **Window Inspector**: Identify windows, titles, handles and associated processes.
 - **Active Window Monitor**: Track the currently focused window.
@@ -119,7 +119,7 @@
 - **Window Availability Detector**: Determine whether a target application is running.
 - **Application State Monitor**: Detect application startup, shutdown and crashes.
 
-## 8. Timing & Performance
+## 8. Timing & Performance (Completed)
 
 - **Interval Profiler**: Measure actual sampling intervals against requested intervals.
 - **High-Resolution Timer**: Provide precise timing measurements.
@@ -136,7 +136,7 @@
 - **System Load Monitor**: Monitor system resource availability.
 - **Performance Benchmark Tool**: Benchmark individual automation operations.
 
-## 9. Input Event Management
+## 9. Input Event Management (Completed)
 
 - **Input Event Logger**: Record keyboard and mouse events in a unified log.
 - **Input Event Monitor**: Monitor incoming input events in real time.
@@ -153,7 +153,7 @@
 - **Input Simulation Tester**: Test simulated inputs and their detection.
 - **Input Source Identifier**: Distinguish physical and software-generated inputs where supported.
 
-## 10. Coordinate & Geometry Tools
+## 10. Coordinate & Geometry Tools (Completed)
 
 - **Coordinate Inspector**: Inspect individual coordinate positions.
 - **Coordinate Normalizer**: Convert positions into normalized 0–1 coordinates.
@@ -342,7 +342,79 @@
 - **Installation Validator**: Verify that required files are present.
 - **Clean Build Utility**: Remove temporary files and rebuild.
 
-## 20. Future & Advanced Capabilities
+## 20. Audio & Sound Management
+
+- **Audio Device Inspector**: Enumerate connected audio devices.
+- **Audio Device Monitor**: Detect audio device connections and disconnections.
+- **Volume Controller**: Read and modify system and application volume.
+- **Mute State Detector**: Detect system and application mute states.
+- **Audio Activity Monitor**: Detect active audio playback.
+- **Audio Capture Tool**: Capture system audio through supported interfaces.
+- **Audio Change Detector**: Detect changes in audio activity.
+- **Sound Recognition Tool**: Identify predefined sound patterns.
+- **Audio Level Analyzer**: Measure audio amplitude and levels.
+- **Audio Notification Detector**: Detect predefined notification sounds.
+
+## 21. Game Controller & HID Management
+
+- **HID Device Inspector**: Enumerate Human Interface Devices.
+- **HID Device Monitor**: Detect device connections and disconnections.
+- **Gamepad Inspector**: Identify connected game controllers.
+- **Gamepad Button Monitor**: Detect pressed and released controller buttons.
+- **Gamepad Axis Monitor**: Track analog stick and trigger positions.
+- **Gamepad Recorder**: Record controller input with timestamps.
+- **Gamepad Playback**: Replay supported controller input.
+- **Gamepad Input Simulator**: Generate supported virtual controller inputs.
+- **Gamepad Calibration Tool**: Calibrate analog sticks and controller ranges.
+- **Controller Deadzone Analyzer**: Analyze analog stick deadzones.
+- **Controller Vibration Tester**: Test supported controller vibration functionality.
+- **Joystick Position Tracker**: Track joystick positions and directional changes.
+
+## 22. Automation Triggers & Event Sources
+
+- **Process Start Trigger**: Start automation when a specified process launches.
+- **Process Exit Trigger**: Trigger actions when a process terminates.
+- **Window Appearance Trigger**: Detect when a specified window appears.
+- **Window Disappearance Trigger**: Detect when a specified window closes.
+- **Window Focus Trigger**: Trigger actions when application focus changes.
+- **File Change Trigger**: Start automation when specified files change.
+- **Directory Change Trigger**: Trigger automation when directory contents change.
+- **Clipboard Change Trigger**: Trigger automation when clipboard contents change.
+- **Device Connection Trigger**: Detect newly connected hardware.
+- **Idle State Trigger**: Trigger automation after a specified period of inactivity.
+- **System State Trigger**: Respond to supported Windows system events.
+- **Scheduled Trigger**: Execute macros at specified dates and times.
+- **Network State Trigger**: Respond to network connectivity changes.
+- **Audio Activity Trigger**: Trigger actions when predefined audio conditions occur.
+
+## 23. Windows System & Session Management
+
+- **System Idle Inspector**: Determine how long the system has been inactive.
+- **Power State Monitor**: Detect system power state changes.
+- **Sleep State Detector**: Detect sleep and resume events.
+- **Lock State Detector**: Detect workstation lock and unlock events.
+- **Session State Monitor**: Monitor Windows user session changes.
+- **Desktop Inspector**: Inspect the active Windows desktop environment.
+- **Virtual Desktop Inspector**: Enumerate available virtual desktops where supported.
+- **Virtual Desktop Switcher**: Switch between supported virtual desktops.
+- **System Notification Monitor**: Detect supported Windows notifications.
+- **Environment Variable Inspector**: Inspect environment variables.
+- **System Event Monitor**: Monitor relevant Windows system events.
+
+## 24. Clipboard Management
+
+- **Clipboard Inspector**: Inspect the current clipboard contents.
+- **Clipboard Text Reader**: Retrieve clipboard text.
+- **Clipboard Text Writer**: Write text to the clipboard.
+- **Clipboard History Recorder**: Record clipboard changes over time.
+- **Clipboard Change Detector**: Detect when clipboard contents change.
+- **Clipboard Format Inspector**: Identify available clipboard formats.
+- **Clipboard Image Reader**: Retrieve images from the clipboard.
+- **Clipboard Content Converter**: Convert supported clipboard formats.
+- **Clipboard Monitor**: Continuously monitor clipboard activity.
+- **Clipboard Sequence Manager**: Manage reusable clipboard sequences.
+
+## Advanced Capabilities
 
 - **Visual State Recognition Engine**: Recognize complex application states.
 - **Machine Learning Recognition Interface**: Support optional trained recognition models.
