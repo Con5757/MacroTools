@@ -16,8 +16,7 @@ typedef struct InputEventPlayback {
 } InputEventPlayback;
 BOOL inputEventPlaybackStart(InputEventPlayback *playback, const InputEvent *events,
                              size_t count, double speed);
-/* Call frequently from the host update loop. Returns number of events sent this call. */
-UINT inputEventPlaybackUpdate(InputEventPlayback *playback);
+UINT inputEventPlaybackUpdate(InputEventPlayback *playback); // returns sent in one call
 void inputEventPlaybackStop(InputEventPlayback *playback);
 BOOL inputEventPlaybackIsFinished(const InputEventPlayback *playback);
 #ifdef __cplusplus
