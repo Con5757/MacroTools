@@ -122,7 +122,7 @@ VTStatus vtImageCaptureScreen(VTRect screenRegion, VTImage *destination) {
 
   VTStatus status = VT_STATUS_CAPTURE_FAILED;
   if (copied) {
-    /* GetDIBits requires the bitmap to be deselected from the memory DC. */
+    // bitmap needs to be deselected from the memory DC for GetDIBits
     HGDIOBJ restoredObject = SelectObject(memoryDC, oldObject);
     if (restoredObject == NULL || restoredObject == HGDI_ERROR) {
       copied = FALSE;
