@@ -136,7 +136,7 @@ VTStatus vtImageCaptureScreen(VTRect screenRegion, VTImage *destination) {
     ZeroMemory(&info, sizeof(info));
     info.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
     info.bmiHeader.biWidth = screenRegion.width;
-    info.bmiHeader.biHeight = -screenRegion.height; /* top-down */
+    info.bmiHeader.biHeight = -screenRegion.height; // top-down
     info.bmiHeader.biPlanes = 1;
     info.bmiHeader.biBitCount = 24;
     info.bmiHeader.biCompression = BI_RGB;
