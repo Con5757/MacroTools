@@ -1,3 +1,3 @@
 # MacroTools 
 
-tools to build macros
+external tools to build macros
