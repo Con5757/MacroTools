@@ -233,6 +233,8 @@
 - **Game UI Template Manager**: Manage templates for different games.
 - **Game Session Logger**: Record session events and automation activity.
 
+**Disclaimer:** These tools are intended for legitimate external automation, observation and testing purposes. They must not be used to cheat, bypass anti-cheat systems, circumvent security measures, gain unauthorized access or interfere with applications. Users are responsible for ensuring their use complies with the applicable terms, policies and laws governing the software they interact with.
+
 ## 14. Configuration & Profile Management
 
 - **Configuration Manager**: Load and save application settings.
