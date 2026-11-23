@@ -169,7 +169,7 @@
 - **Coordinate Calibration Tool**: Calibrate positions against known reference points.
 - **Coordinate Profile Manager**: Save and load coordinate configurations.
 
-## 11. Macro Recording & Playback
+## 11. Macro Recording & Playback (Completed)
 
 - **Macro Recorder**: Record mouse and keyboard actions.
 - **Macro Player**: Replay saved macros.
@@ -193,7 +193,7 @@
 - **Macro Importer/Exporter**: Import and export macro configurations.
 - **Macro Validator**: Validate macros before execution.
 
-## 12. Logic & Automation Utilities
+## 12. Logic & Automation Utilities (Completed)
 
 - **Condition Evaluator**: Evaluate logical conditions.
 - **State Machine Tester**: Test state-based automation.
