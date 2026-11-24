@@ -70,7 +70,7 @@ CTPoint mapped;
 
 if (ctNormalizeCoordinate(position, source, &normalized) == CT_STATUS_OK &&
     ctMapCoordinate(position, source, target, &mapped) == CT_STATUS_OK) {
-    // normalized and mapped are ready for the application to use
+    // normalized and mapped are ready for the application to use.
 }
 ```
 
