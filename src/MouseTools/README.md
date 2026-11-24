@@ -60,5 +60,3 @@ When linking an executable, link the required Windows API and math libraries, fo
 ```powershell
 gcc *.o -o MacroTools.exe -luser32 -lm
 ```
-
-The final application supplies its own `main()` (or Raylib entry point).
