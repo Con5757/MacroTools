@@ -70,4 +70,3 @@ When linking the resulting objects into an executable, add:
 - WIC supports PNG, JPEG, and BMP output here. JPEG is lossy; PNG and BMP are lossless. Image paths passed to WIC are UTF-8.
 - `screenshotRecorderStart()` creates the target directory if it does not exist, but only creates that directory level; its parent directory must already exist.
 - `continuousScreenCaptureUpdate()` and recorder update functions are non-blocking with respect to their configured interval, but an actual capture and image encoding operation still takes time. For expensive encoding, call the recorder on a worker thread managed by the host application.
-- These sources are prepared for Windows integration but have not been runtime-tested against your machine or Raylib host. Validate capture behavior on Windows, especially mixed-DPI and GPU-rendered windows.
