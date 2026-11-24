@@ -1,6 +1,6 @@
 # Logic & Automation Utilities
 
-A collection of reusable, standalone C11 utilities for automation logic. Each tool is provided as its own `.c` / `.h` pair. The modules have no `main()` functions and do not create their own threads, timers, windows or event loops; the host application drives them, making them suitable for a future Raylib interface.
+A collection of reusable, standalone C11 utilities for automation logic. Each tool is provided as its own `.c` / `.h` pair. The modules have no `main()` functions and do not create their own threads, timers, windows or event loops; the host application drives them.
 
 ## Modules
 
