@@ -40,7 +40,7 @@ case WM_INPUT_DEVICE_CHANGE: {
         inputEventLoggerRecord(&logger, &events[i]);
         inputEventRecorderAppend(&recorder, &events[i]);
     }
-    // For foreground WM_INPUT, always allow Windows to perform cleanup
+    // For foreground WM_INPUT -> always allow Windows to perform cleanup
     if (GET_RAWINPUT_CODE_WPARAM(wParam) == RIM_INPUT)
         return DefWindowProc(hwnd, message, wParam, lParam);
     break;
