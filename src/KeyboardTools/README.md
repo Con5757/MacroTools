@@ -20,7 +20,7 @@ A collection of independent Windows keyboard utilities written in C. Each tool i
 
 ## Requirements
 
-- Windows 10 or newer recommended.
+- Windows 10 minimum (Windows 11, preferred)
 - C11 compiler (MinGW GCC or Clang targeting Windows).
 - Link against `user32`.
 
