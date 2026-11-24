@@ -82,4 +82,4 @@ Link the resulting object files into your host application. `macroToolsCommon.c`
 
 ## Important scope note
 
-This package manages macro data, sequencing and playback scheduling. It does not install low-level keyboard/mouse hooks or synthesize OS input directly. The GUI/input layer should feed recorded events into `MacroRecorder` and implement the player's dispatch callback using your existing Input Event/Mouse/Keyboard simulation modules. This separation is intentional for future Raylib integration.
+This package manages macro data, sequencing and playback scheduling. It does not install low-level keyboard/mouse hooks or synthesize OS input directly. The GUI/input layer should feed recorded events into `MacroRecorder` and implement the player's dispatch callback using your existing Input Event/Mouse/Keyboard simulation modules.
