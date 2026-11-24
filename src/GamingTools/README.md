@@ -82,6 +82,6 @@ foreach ($file in $files) {
 Link the application's final executable with `-luser32` on Windows when using the
 window detector. When linking all modules, include `gameToolsCommon.c` exactly once.
 
-## Disclaimer
+# Disclaimer
 
 These tools are intended for legitimate external automation, observation and testing purposes. They must not be used to cheat, bypass anti-cheat systems, circumvent security measures, gain unauthorized access or interfere with applications. Users are responsible for ensuring their use complies with the applicable terms, policies and laws governing the software they interact with.
