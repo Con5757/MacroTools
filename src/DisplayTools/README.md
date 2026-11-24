@@ -37,7 +37,7 @@ Generate a detailed console report containing display device information, identi
 
 ## Requirements
 
-- Windows
+- Windows (Windows 11 preferred)
 - C compiler (GCC or Clang)
 - Windows API
 
