@@ -2,3 +2,4 @@
 .vs/
 raylib/
 *.exe
+*.o
