@@ -9,6 +9,8 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
+include(CTest)
+
 add_library(macrotools_distance_calculator STATIC
     src/Coord-GeometryTools/distanceCalculator.c
 )
@@ -33,5 +35,20 @@ if(MSVC)
 else()
     target_compile_options(macrotools_distance_calculator
         PRIVATE -Wall -Wextra -Wpedantic
+    )
+endif()
+
+if(BUILD_TESTING)
+    add_executable(test_distance_calculator
+        tests/Coord-GeometryTools/test_distanceCalculator.c
+    )
+
+    target_link_libraries(test_distance_calculator
+        PRIVATE MacroTools::DistanceCalculator
+    )
+
+    add_test(
+        NAME DistanceCalculator
+        COMMAND test_distance_calculator
     )
 endif()

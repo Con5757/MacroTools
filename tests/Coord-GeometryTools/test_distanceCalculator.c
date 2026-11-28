@@ -1,4 +1,4 @@
-#include "../src/Coord-GeometryTools/distanceCalculator.h"
+#include "../../src/Coord-GeometryTools/distanceCalculator.h"
 
 #include <float.h>
 #include <math.h>

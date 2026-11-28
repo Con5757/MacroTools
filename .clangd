@@ -1,9 +1,16 @@
 CompileFlags:
   Compiler: C:/msys64/ucrt64/bin/g++.exe
   Add:
-    - -std=c++17
+    - -DWIN32_LEAN_AND_MEAN
     - -IC:/msys64/ucrt64/include
-    - -IC:/msys64/ucrt64/include/leptonica
-    - -IC:/msys64/ucrt64/include/libpng16
-    - -IC:/msys64/ucrt64/include/webp
-    - -IC:/msys64/ucrt64/include/openjpeg-2.5
+
+---
+If:
+  PathMatch: '.*\.c$'
+CompileFlags:
+  Compiler: C:/msys64/ucrt64/bin/gcc.exe
+  Add:
+    - -std=c11
+    - -U__OBJC__
+    - -U__OBJC_BOOL
+    - -U__objc_INCLUDE_GNU

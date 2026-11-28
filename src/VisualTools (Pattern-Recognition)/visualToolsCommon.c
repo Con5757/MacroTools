@@ -1,10 +1,15 @@
 #include "visualToolsCommon.h"
 
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+#include <Windows.h>
+
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
 
-BOOL vtImageIsValid(const VTImage *image) {
+VTBool vtImageIsValid(const VTImage *image) {
   return image != NULL && image->pixels != NULL && image->width > 0 &&
          image->height > 0 && image->width <= INT_MAX / 3 &&
          image->stride >= image->width * 3;
@@ -40,7 +45,7 @@ VTStatus vtImageClone(const VTImage *source, VTImage *destination) {
   }
   return VT_STATUS_OK;
 }
-BOOL vtRectIsValid(VTRect rect) {
+VTBool vtRectIsValid(VTRect rect) {
   return rect.width > 0 && rect.height > 0 && rect.x <= INT_MAX - rect.width &&
          rect.y <= INT_MAX - rect.height;
 }
@@ -72,7 +77,7 @@ void vtImageDestroy(VTImage *image) {
   image->pixels = NULL;
   image->width = image->height = image->stride = 0;
 }
-BOOL vtImageGetPixel(const VTImage *image, int x, int y, VTRgb *color) {
+VTBool vtImageGetPixel(const VTImage *image, int x, int y, VTRgb *color) {
   if (!vtImageIsValid(image) || color == NULL || x < 0 || y < 0 ||
       x >= image->width || y >= image->height)
     return FALSE;
@@ -83,7 +88,7 @@ BOOL vtImageGetPixel(const VTImage *image, int x, int y, VTRgb *color) {
   color->b = p[2];
   return TRUE;
 }
-BOOL vtImageSetPixel(VTImage *image, int x, int y, VTRgb color) {
+VTBool vtImageSetPixel(VTImage *image, int x, int y, VTRgb color) {
   if (!vtImageIsValid(image) || x < 0 || y < 0 || x >= image->width ||
       y >= image->height)
     return FALSE;
