@@ -59,7 +59,7 @@ static VTStatus addTesseractElement(tesseract::ResultIterator &iterator,
   int right;
   int bottom;
 
-  if (iterator.BoundingBox(level, &left, &top, &right, &bottom))
+  if (!iterator.BoundingBox(level, &left, &top, &right, &bottom))
     return VT_STATUS_NOT_FOUND;
   if (right <= left || bottom <= top)
     return VT_STATUS_NOT_FOUND;
